@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TEST-NAV</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<nav class="navbar" >
+        
+<div class="mobile-nav"  >
+    <div class="contrast-toggle">HIGH CONTRAST: </div>
+    <div class="action-buttons">
+        <a href='/locations' class='location location-toggler' data-results-url='/location-search-results' >            <span class='sr-only' style="">Find Cinnabon</span>
+</a><a href='#collapseSignup' class='primary offers' data-toggle='collapse' >SIGN UP</a>
+    </div>
+    <div class="logo">
+<a href='/' ><img src='https://cdn.cinnabon.com/-/media/cinnabon/navigation/logo-blue-secondary-lrg.png?v=1&amp;d=20170906T163530Z&amp;h=100&amp;w=302&amp;la=en&amp;hash=85FCE162C857015BD9471159B02C1C214DCD92D0' alt='' /></a>    </div>
+    <a class="nav-hamburger col-sm-4">
+        <span class="toggle-bar"></span>
+        <span class="toggle-bar"></span>
+        <span class="toggle-bar"></span>
+    </a>
+</div>
+
+
+
+<style>
+    .desktop-nav .main-nav + .main-nav {
+        display: none;
+    }
+</style>
+
+<div class="desktop-nav" >
+    <div class="high-contrast-toggle">
+        <span class="text">High Contrast</span>
+        <a href="javascript:void(0)" class="high-contrast-handle">
+            <span class="off">Off</span>
+            <span class="on">On</span>
+        </a>
+    </div>
+    <div tabindex="0" class="contrast-toggle">HIGH CONTRAST: </div>
+    
+    <div class="secondary-nav hidden-xs-inline hidden-sm-inline hidden-md-inline" >
+        <a href='#collapseSignup' data-toggle='collapse' class='offers sign-up envelope collapsed' aria-expanded='false' >OFFERS</a>
+    </div>
+    <div class="logo">
+<a href='/' ><img src='https://cdn.cinnabon.com/-/media/cinnabon/navigation/logo-blue-secondary-lrg.png?v=1&amp;d=20170906T163530Z&amp;h=100&amp;w=302&amp;la=en&amp;hash=85FCE162C857015BD9471159B02C1C214DCD92D0' alt='' /></a>    </div>
+    
+
+    <div class="main-nav" >
+        <ul>
+            
+<li class="nav-item menu" style="" >
+    
+
+
+<a href='/bakery-menu' class='nav-link' >Bakery Menu</a>
+
+    <span class="nav-caret"></span>
+
+</li>
+<li class="nav-item" style="" >
+    <a href='/products' class='nav-link' >Products</a>
+</li>
+<li class="nav-item" style="" >
+    <a href='/gift-cards' class='nav-link' >Gift Cards</a>
+</li>
+<li class="nav-item" style="" >
+    <a href='/recipes' class='nav-link' >Recipes</a>
+</li>
+<li class="nav-item" style="" >
+    <a href='/get-it-now' class='nav-link' >Get It Now</a>
+</li>
+        </ul>
+    </div>
+    
+
+<div class="header-tools">
+    <div class="inner">
+        <a href="#"
+           id="find-location"
+           class="button location location-toggler"
+           title="Find yours"
+           data-results-url="#">
+            <span class="arrow">Find Cinnabon</span><span class="sr-only">Find Cinnabon</span>
+        </a>
+    </div>
+</div>
+</div>
+
+
+<div class="container-fluid location-finder-header">
+    <form action="/location-search-results" class="location-finder" style="display: none;">
+        <div class="location-finder-inner">
+            <span class="triangle">
+                <img src="/assets/Cinnabon/css/img/triangle.png" alt="Use My Location" />
+            </span>
+            <div class="inner">
+                <div class="locator form-group">
+                    <input type="text"
+                           id="location"
+                           name="location"
+                           placeholder="ENTER YOUR CITY OR ZIP"
+                           autofocus="autofocus" />
+                    <label for="location">
+                        <span class="icon-location"></span>
+                    </label>
+                </div>
+                <button class="button button-transparent go" type="submit">
+                    <span class="arrow">Go</span>
+                </button>
+            </div>
+        </div>
+    </form>
+</div>
+    </nav>
+</header>
+<div class="mobile-drop-nav">
+    <div class="nav-overlay">
+        <div class="top">
+            <a href="javascript:void(0)" class="high-contrast-toggle high-contrast-handle">
+    <span class="text">High Contrast</span>
+    <span class="off">Off</span>
+    <span class="on">On</span>
+</a>
+
+            
+<nav class="main-navigation" aria-label="main-navigation navigation" >
+    <ul>
+        <li class="nav-item">
+            <a href="/bakery-menu" target="" class="nav-link ">
+                Menu
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="/recipes" target="" class="nav-link ">
+                Recipes
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="/products" target="" class="nav-link ">
+                Products
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="/gift-cards" target="" class="nav-link ">
+                Gift Cards
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="/locations" target="" class="nav-link ">
+                Locations
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="/get-it-now" target="" class="nav-link ">
+                Get It Now
+            </a>
+        </li>
+</ul>
+
+</nav>
+
+</body>
+</html>

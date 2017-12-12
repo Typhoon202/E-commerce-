@@ -1,0 +1,128 @@
+a{
+	text-decoration: none !important;
+}
+body{
+	overflow-x: hidden;
+
+	background-color:white; 
+}
+.navbar-fixed-top{
+	height: 65px;
+}
+#logo{
+height: 100px;
+width: 200px;
+margin-left: 18%	
+}
+.navbar-header {
+    padding: 5px;
+}
+	
+.navbar-nav a{
+  color: #523428; !important;
+}
+.dropdown-menu a{
+	background-color: white;
+  color: white !important;
+}
+.dropdown-menu a:hover{
+  background-color: rgb(32,32,32) !important;
+}
+
+h1{
+	color: rgb(0,204,204);
+}
+div#desc {
+
+	position: relative;
+	display: block;
+    top: 210px;	
+    margin-left: 18%;
+    margin-right: 18%; 
+	color: black;
+	letter-spacing: 1px;
+	line-height: 20px;
+
+}
+
+.wrap{
+
+	width: 30%;
+  	position: absolute;
+  	top: 190px;
+  	left: 82%;
+}
+
+.searchButton {
+  position: absolute;  
+  width: 60px;
+  height: 20px;
+  color: black;
+  cursor: pointer;
+  font-style: italic;
+}
+.searchTerm{
+  color: black;
+}
+
+div{
+	display: block;
+}
+img.paulimg {
+	box-shadow: 5px 5px 20px #888888;
+	border-style: double;
+	border-width: 7px;
+	height: 300px;
+	width: 400px;
+ }
+ div#contact_info{
+
+	position: relative;
+	display: block;
+    top: 210px;	
+    margin-left: 8%;
+    margin-right: 5%; 
+	color: black;
+	letter-spacing: 1px;
+	line-height: 20px;
+
+ }
+ #hrcontact {
+ 	
+ }
+ #paulinsta, #paulfb {
+ 	width: 50px;
+ 	height: 50px;
+ 	padding: 10px;
+ }
+ #paulphone, #paullocation, #paulmail{
+
+ 	width: 30px;
+ 	height: 30px;
+ 	padding: 10px;
+ }
+#paulmap{
+	width: 650px;
+	height: 320px; 	
+	float: right;
+	top: 300px;
+}
+#hrexample{
+	width: 5px;
+}
+#feedbackid{
+
+	width: 100%;
+	height: 200px;
+
+}
+#feedbackbutton{
+	background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}

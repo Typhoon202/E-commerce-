@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>YOUR ORDER</title>
+	  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="paul_css.css">
+</head>
+<body>
+<nav class="navbar nav navbar-inverse navbar-fixed-top" style="background-color: black " >
+  <div class="container-fluid">
+            
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+        <img  id="paulf" src="paul_logo.png">
+      
+      <ul class="nav navbar-nav">
+        <li ><a href="paul.html" class="linksNav">Home</a></li>
+        <li><a href="paul_menu.html" class="linksNav">Menu</a></li>
+        <li><a href="paul_contact.html" class="linksNav">Contact</a></li>
+        <li class="dropdown" style="background-color: black">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#" class="linksNav">TastySearch <span class="caret"></span></a>
+          <ul class="dropdown-menu" style="background-color:black; opacity:0.8;">
+            <li><a href="paul.html" class="linksNav">PAUL</a></li>
+            <li><a href="cinnabon.html" class="linksNav">Cinnabon</a></li>
+            <li><a href="books.html" class="linksNav">Books&Bytes</a></li>
+            <li><a href="divan.html" class="linksNav">Rem Service</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="http://www.paul-international.com/" class="linksNav"><span class="glyphicon glyphicon-globe"></span> PAUL International</a></li>
+        <li><a href="paul_order.html" class="linksNav"><span class="glyphicon glyphicon-shopping-cart"></span> YOUR ORDER</a></li>
+      </ul> 
+    </div>
+  </div>
+</nav>
+<div id="orderheader">
+<div class="container">
+	<h3>YOUR ORDER</h3>
+</div>
+<hr class="hrmargin">
+<div class="container">
+	<div class="row">
+		<div class="col-sm-3">
+		<img class="orderedimage" src="paulsoup.jpg"> </div>
+		<div class="col-sm-3">
+			<b><h5>Paul soup in bowl<h5></b><br>
+			<div style="font-style: italic;" > Portion:</div>
+			<input type="text" style="font-style: italic; background-color: rgb(254,238,214);" value="0"  size="1"  id="count" readonly>
+    		<a href="#" class="minus" > - </a>
+    		<a href="#" class="plus" > + </a>
+		</div>
+		<div class="col-sm-3"> </div>
+		<div class="col-sm-3" style="font-size: 20pt"> <b>7.5 AZN <b> </div>
+	</div>
+</div>
+<hr class="hrmargin">
+<div class="container">
+	<div class="row">
+		<div class="col-sm-3">
+		<img class="orderedimage" src="paulsoup.jpg"> </div>
+		<div class="col-sm-3">
+			<b><h5>Paul soup in bowl<h5></b><br>
+			<div style="font-style: italic;" > Portion:</div>
+			<input type="text" style="font-style: italic; background-color: rgb(254,238,214);" value="0"  size="1"  id="count" readonly>
+    		<a href="#" class="minus" > - </a>
+    		<a href="#" class="plus" > + </a>
+		</div>
+		<div class="col-sm-3"> </div>
+		<div class="col-sm-3" style="font-size: 20pt"> <b>7.5 AZN <b>  </div>
+	</div>
+</div>
+<hr class="hrmargin">
+
+<div class="container"> 
+		<div class="row">
+			<div class="col-sm-9"></div>
+			<div class="col-sm-3"> <i>TOTAL</i></div> <br><br>
+			<div class="orderform">
+  			<input class="orderoption" size="30" type="text" name="firstname" placeholder="ID">
+  			<input class="orderoption" size="40" type="text" name="firstname" placeholder="Name">
+			<input class="orderoption" type="time" min="09:00" max="18:00" size="40" type="text" name="lastname" placeholder="Select time interval">
+			<input id="orderbutton" type="button" value="Send Order"> </div>
+
+
+	</div><br>
+</div>
+			
+		</div>
+</div>
+</div>
+<script >
+$(function() {
+    $(".plus").click(function() {
+        var text = $(this).prev().prev(":text");
+        text.val(parseFloat(text.val(), 10) + 0.5);
+    });
+
+    $(".minus").click(function() {
+        var text = $(this).prev(":text");
+        text.val(parseFloat(text.val(), 10) - 0.5);
+    });
+});
+    </script>	
+</body>
+</html>
+
